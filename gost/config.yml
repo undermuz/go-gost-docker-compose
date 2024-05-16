@@ -1,0 +1,10 @@
+services:
+    - name: "service-0"
+      addr: ":8443"
+      handler:
+          type: "http"
+      listener:
+          type: "tls"
+          tls:
+              certFile: "cert.pem"
+              keyFile: "key.pem"
