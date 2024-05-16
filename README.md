@@ -7,4 +7,6 @@ This repository contains example files to run [GO Simple Tunnel v3](https://gost
 3. Fill `.env` file for exposing ports
 4. Run `docker compose up`
 
-The example config file and dockerfile contains tls settings with filenames `cert.pem` and `key.pem`, if you do not need TLS, just remove these rows from the files
+The example config file and dockerfile contains tls settings with filenames `cert.pem` and `key.pem`, if you do not need TLS, just remove these lines from the files
+
+If you need TLS then place yours certificate file and key file in the root with names `cert.pem` and `key.pem`
