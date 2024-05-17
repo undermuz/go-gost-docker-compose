@@ -12,4 +12,8 @@ The example config file and dockerfile contains tls settings with filenames `cer
 
 If you need TLS then place yours certificate file and key file in the root with names `cert.pem` and `key.pem`
 
+## Under developing
+
+### Nginx
+
 For using with `nginx` see `./nginx` folder
