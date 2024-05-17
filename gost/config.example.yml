@@ -1,6 +1,6 @@
 services:
     - name: "service-0"
-      addr: ":8443"
+      addr: ":443"
       handler:
           type: "http"
       listener:
