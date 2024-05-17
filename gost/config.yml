@@ -1,6 +1,6 @@
 services:
     - name: "service-0"
-      addr: ":8443"
+      addr: ":443"
       handler:
           type: "http"
       listener:
@@ -8,3 +8,9 @@ services:
           tls:
               certFile: "cert.pem"
               keyFile: "key.pem"
+    - name: "service-1"
+      addr: ":7777"
+      handler:
+          type: "socks5"
+      listener:
+          type: "tcp"
