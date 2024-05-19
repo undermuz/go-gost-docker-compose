@@ -8,9 +8,3 @@ services:
               keyFile: "key.pem"
       handler:
           type: "http"
-    - name: "service-1"
-      addr: ":7777"
-      listener:
-          type: "tcp"
-      handler:
-          type: "socks5"

@@ -2,18 +2,19 @@
 
 This repository contains example files to run [GO Simple Tunnel v3](https://gost.run/en/) with docker compose
 
-1. `cp ./gost/config.example.yml ./gost/config.yml`
-2. Edit `./gost/config.yml` for your purpose
-3. Edit `services->gost->ports` according to your gost's config 
-4. Fill `.env` file for exposing ports
+## Setup
+
+### TLS
+
+1. `cd ./configurations/tls`
+2. `cp ./config.example.yml ./config.yml && cp ./example.env ./.env`
+3. Edit `./config.yml` and `./.env` for your purpose (Optional)
+4. Place yours certificate file and key file in the root with names `cert.pem` and `key.pem`
 5. Run `docker compose up`
 
-The example config file and dockerfile contains tls settings with filenames `cert.pem` and `key.pem`, if you do not need TLS, just remove these lines from the files
+### Socks5
 
-If you need TLS then place yours certificate file and key file in the root with names `cert.pem` and `key.pem`
-
-## Under developing
-
-### Nginx
-
-For using with `nginx` see `./nginx` folder
+1. `cd ./configurations/socks5`
+2. `cp ./config.example.yml ./config.yml && cp ./example.env ./.env`
+3. Edit `./config.yml` and `./.env` for your purpose (Optional)
+4. Run `docker compose up`

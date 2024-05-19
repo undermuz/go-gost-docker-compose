@@ -1,0 +1,7 @@
+services:
+    - name: "service-1"
+      addr: ":1080"
+      listener:
+          type: "tcp"
+      handler:
+          type: "socks5"
