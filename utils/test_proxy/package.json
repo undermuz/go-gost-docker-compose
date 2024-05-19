@@ -1,0 +1,16 @@
+{
+  "name": "test_proxy",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env https_proxy=socks5://127.0.0.1:1081 node index.js"
+  },
+  "author": "undermuz",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "proxy-agent": "^6.4.0"
+  }
+}
