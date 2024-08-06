@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env https_proxy=socks5://127.0.0.1:1081 node index.js"
+    "start": "cross-env https_proxy=socks5://username:password@127.0.0.1:7778 node index.js"
   },
   "author": "undermuz",
   "license": "ISC",
