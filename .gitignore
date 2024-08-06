@@ -3,4 +3,4 @@
 .env
 gost/config.yml
 node_modules
-./docker-compose.yml
+/docker-compose.yml
