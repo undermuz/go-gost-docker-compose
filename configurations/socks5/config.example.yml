@@ -1,7 +1,10 @@
 services:
     - name: "service-1"
-      addr: ":1080"
-      listener:
-          type: "tcp"
+      addr: ":7777"
       handler:
           type: "socks5"
+          auth:
+              username: username
+              password: password
+      listener:
+          type: "tcp"
