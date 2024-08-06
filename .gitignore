@@ -1,6 +1,6 @@
 *.pem
 *.pem
 .env
-gost/config.yml
+configurations/**/config.yml
 node_modules
 /docker-compose.yml
